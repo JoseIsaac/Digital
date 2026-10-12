@@ -134,6 +134,21 @@
         .format-tag { display: inline-block; margin-bottom: 9px; color: var(--green); font-size: 9px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; }
         .format strong { display: block; font-size: 12px; }
         .format p { margin-top: 4px; font-size: 10px; }
+        .blog-hub { display: grid; grid-template-columns: 1fr; gap: 16px; border-color: #dfe4d5; background: linear-gradient(135deg, #fff 55%, #f4f6ef); }
+        .blog-hub > div:first-child { max-width: 760px; }
+        .blog-hub > div:first-child .format-tag { margin-bottom: 7px; }
+        .blog-hub h3 { font-size: 17px; }
+        .blog-hub > div:first-child p { font-size: 11px; }
+        .blog-features { gap: 10px; }
+        .blog-features > div { padding: 13px; border-radius: 10px; background: #f5f6f1; }
+        .blog-features strong, .blog-features span { display: block; }
+        .blog-features strong { margin-bottom: 5px; color: var(--ink); font-size: 10px; }
+        .blog-features span { color: #6f736b; font-size: 10px; }
+        .blog-workflow { padding: 12px 14px; border-left: 3px solid var(--gold); border-radius: 0 8px 8px 0; background: #fbf8ef; color: #66685f; font-size: 10px; }
+        .blog-workflow strong { color: var(--ink); }
+        .blog-hub .blog-note { color: #777b73; font-size: 9px; }
+        .weekly-note { margin-top: 12px; padding: 12px 15px; border: 1px solid #e7eadd; border-radius: 10px; background: #f3f5ee; color: #656a5d; font-size: 10px; }
+        .weekly-note strong { color: var(--green); }
         .rule-list { display: grid; gap: 10px; margin: 13px 0 0; padding: 0; list-style: none; }
         .rule-list li { position: relative; padding-left: 23px; color: #62665e; font-size: 11px; }
         .rule-list li::before { position: absolute; left: 0; color: var(--green); font-weight: 900; content: "✓"; }
@@ -164,6 +179,8 @@
         .script h3 { margin-top: 5px; }
         .script p + p { margin-top: 10px; }
         .duration { display: inline-block; margin-top: 13px; padding: 5px 8px; border-radius: 6px; background: var(--red-soft); color: #a33b32; font-size: 9px; font-weight: 700; }
+        .video-rotation { margin: 0 0 10px; color: var(--muted); font-size: 11px; }
+        .video-rotation strong { color: var(--ink); }
         .video-types { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 10px; margin-top: 14px; }
         .video-type { padding: 14px 12px; border: 1px solid var(--line); border-radius: 11px; background: white; }
         .video-type span { display: block; margin-bottom: 6px; color: var(--green); font-size: 9px; font-weight: 800; }
@@ -349,7 +366,7 @@
             <section class="section" id="redes" aria-labelledby="redes-titulo">
                 <div class="section-heading">
                     <span class="section-index">03</span>
-                    <div><h2 id="redes-titulo">Estrategia de redes</h2><p>Una presencia reconocible, adaptada al lenguaje de cada plataforma.</p></div>
+                    <div><h2 id="redes-titulo">Redes y blog de Actopan</h2><p>Un blog propio reúne la conversación y organiza el contenido que se adapta a cada red.</p></div>
                 </div>
                 <div class="grid-3">
                     <article class="card platform">
@@ -365,26 +382,38 @@
                         <h3>Instagram</h3><p>Reels, historias y carruseles claros; cuidar coherencia gráfica y aprovechar preguntas y encuestas.</p>
                     </article>
                 </div>
+                <article class="card blog-hub" style="margin-top:16px">
+                    <div>
+                        <span class="format-tag">Centro de contacto y contenido</span>
+                        <h3>El blog: la casa digital de la conversación</h3>
+                        <p>El blog complementa las publicaciones breves con artículos que explican cada tema con contexto, avances y próximos pasos. Es la fuente editorial principal: Facebook, TikTok e Instagram comparten versiones breves que enlazan al contenido completo.</p>
+                    </div>
+                    <div class="grid-3 blog-features">
+                        <div><strong>Escuchar a Actopan</strong><span>Formulario para compartir una pregunta o propuesta, con localidad y tema. Datos de contacto opcionales.</span></div>
+                        <div><strong>Explicar y dar seguimiento</strong><span>Artículos por tema, fecha y localidad; incluir fuentes, avances y actualizaciones.</span></div>
+                        <div><strong>Ordenar lo que se publica</strong><span>Calendario editorial con tema, responsable, revisión, fecha, formato, enlaces y estado por red.</span></div>
+                    </div>
+                    <div class="blog-workflow"><strong>Flujo editorial:</strong> escuchar y recibir propuestas → verificar información → preparar y revisar el artículo → adaptar tres publicaciones semanales → enlazar al blog → responder y registrar seguimiento.</div>
+                    <p class="blog-note">Las publicaciones se programan o comparten desde las herramientas oficiales de cada red. El blog centraliza el contenido y el calendario; la publicación automática requiere integrar y autorizar las plataformas. Las aportaciones se revisan antes de publicarse y se protegen los datos personales.</p>
+                </article>
                 <div class="calendar-wrap" style="margin-top:17px">
                     <table>
-                        <thead><tr><th>Día</th><th>Contenido principal</th><th>Formato</th><th>Adaptación</th></tr></thead>
+                        <thead><tr><th>Día</th><th>Contenido / blog</th><th>Publicación semanal</th><th>Adaptación en redes</th></tr></thead>
                         <tbody>
-                            <tr><td>Lunes</td><td>Una pregunta para escuchar a la comunidad</td><td>Historia / encuesta</td><td>Instagram + Facebook</td></tr>
-                            <tr><td>Martes</td><td>Una idea explicada de forma sencilla</td><td>Video vertical</td><td>TikTok + Reels</td></tr>
-                            <tr><td>Miércoles</td><td>Respuesta a una pregunta recibida</td><td>Video o publicación</td><td>Las tres plataformas</td></tr>
-                            <tr><td>Jueves</td><td>Actividad y contexto detrás de escena</td><td>Historias / álbum</td><td>Instagram + Facebook</td></tr>
-                            <tr><td>Viernes</td><td>Resumen de la semana y próximos pasos</td><td>Carrusel / video</td><td>Las tres plataformas</td></tr>
-                            <tr><td>Fin de semana</td><td>Escucha, conversación y cobertura oportuna</td><td>Historias / transmisión</td><td>Según actividad</td></tr>
+                            <tr><td>Martes</td><td>Publicar un artículo central: tema, contexto, fuentes y pregunta para la comunidad.</td><td>Publicación 1 · extracto con enlace al blog</td><td>Facebook + Instagram</td></tr>
+                            <tr><td>Jueves</td><td>Grabar un video semanal basado en el artículo o en una pregunta recibida.</td><td>Publicación 2 · un video vertical</td><td>TikTok + Reels + Facebook</td></tr>
+                            <tr><td>Sábado</td><td>Actualizar el artículo con respuestas o siguiente paso y cerrar el ciclo.</td><td>Publicación 3 · resumen o carrusel</td><td>Facebook + Instagram; enlazar al blog</td></tr>
                         </tbody>
                     </table>
                 </div>
+                <div class="weekly-note">Ritmo base: <strong>3 publicaciones por semana en total</strong>, adaptadas a las redes —no tres publicaciones por plataforma—. Una de ellas es el único video semanal. El blog conserva el contexto completo; historias ocasionales para responder o escuchar no sustituyen ni aumentan este calendario.</div>
                 <div class="golden-rule">Regla de oro <span>·</span> Cercanía <span>+</span> honestidad <span>+</span> seguimiento</div>
             </section>
 
             <section class="section" id="videos" aria-labelledby="videos-titulo">
                 <div class="section-heading">
                     <span class="section-index">04</span>
-                    <div><h2 id="videos-titulo">Videos que abren conversación</h2><p>Guiones verticales listos para grabar y adaptar a preguntas reales.</p></div>
+                    <div><h2 id="videos-titulo">Un video semanal para abrir conversación</h2><p>Elegir un guion cada semana, grabarlo en vertical y adaptarlo a las tres redes.</p></div>
                 </div>
                 <div class="grid-2">
                     <article class="card script" data-script="GUION 01">
@@ -412,7 +441,8 @@
                         <p><strong>Cierre:</strong> “El siguiente paso es [acción concreta]. Les contaré cómo avanza.”</p><span class="duration">30–45 segundos · No prometer sin sustento</span>
                     </article>
                 </div>
-                <div class="video-types" aria-label="Cinco tipos de video">
+                <p class="video-rotation"><strong>Rotación sugerida:</strong> producir un solo video por semana y alternar estos cinco enfoques para mantener variedad sin aumentar la frecuencia.</p>
+                <div class="video-types" aria-label="Cinco tipos de video para alternar semana a semana">
                     <div class="video-type"><span>TIPO 01</span><strong>Preguntas abiertas a la comunidad</strong></div>
                     <div class="video-type"><span>TIPO 02</span><strong>Respuestas claras a dudas frecuentes</strong></div>
                     <div class="video-type"><span>TIPO 03</span><strong>Historias con autorización</strong></div>
@@ -421,7 +451,7 @@
                 </div>
                 <div class="card" style="margin-top:15px">
                     <h3>Edición rápida con identidad</h3>
-                    <p>Formato 9:16 · duración ideal 15–60 s · subtítulos legibles · logo PP al cierre · rojo y verde como acentos · música con licencia adecuada.</p>
+                    <p>Una pieza semanal, en formato 9:16 y de 15–60 s · subtítulos legibles · logo PP al cierre · rojo y verde como acentos · música con licencia adecuada. Publicar el mismo video, con ajustes de texto y descripción, en TikTok, Reels y Facebook.</p>
                     <div class="edit-steps"><span class="edit-step"><b>01</b> Gancho en 2 s</span><span class="edit-step"><b>02</b> Una idea por video</span><span class="edit-step"><b>03</b> Subtítulos</span><span class="edit-step"><b>04</b> Cierre con pregunta</span></div>
                 </div>
             </section>
@@ -429,19 +459,19 @@
             <section class="section" id="cronograma" aria-labelledby="cronograma-titulo">
                 <div class="section-heading">
                     <span class="section-index">05</span>
-                    <div><h2 id="cronograma-titulo">Cronograma y metas digitales</h2><p>Un ciclo inicial de cuatro semanas para publicar, aprender y ajustar.</p></div>
+                    <div><h2 id="cronograma-titulo">Cronograma y metas digitales</h2><p>Un artículo de blog y tres publicaciones sociales por semana, incluido un video semanal.</p></div>
                 </div>
                 <div class="grid-2">
-                    <article class="card week"><span class="week-number">Semana 01 · Preparar</span><h3>Ordenar la presencia</h3><p>Actualizar perfiles y portadas; presentar la identidad; publicar el calendario y abrir una primera pregunta.</p><span class="week-metric">Medir: alcance inicial y respuestas recibidas.</span></article>
-                    <article class="card week"><span class="week-number">Semana 02 · Escuchar</span><h3>Invitar a participar</h3><p>Usar encuestas, preguntas y conversaciones; agrupar temas recurrentes sin exponer datos personales.</p><span class="week-metric">Medir: comentarios útiles y conversaciones iniciadas.</span></article>
-                    <article class="card week"><span class="week-number">Semana 03 · Explicar</span><h3>Crear contenido de valor</h3><p>Publicar respuestas en video, historias autorizadas y explicaciones breves con información comprobable.</p><span class="week-metric">Medir: reproducciones completas y compartidos.</span></article>
-                    <article class="card week"><span class="week-number">Semana 04 · Dar seguimiento</span><h3>Mostrar continuidad</h3><p>Compartir resumen de escucha, avances y pendientes; revisar resultados y ajustar los próximos temas.</p><span class="week-metric">Medir: respuestas, guardados y evolución del alcance.</span></article>
+                    <article class="card week"><span class="week-number">Semana 01 · Preparar</span><h3>Ordenar la presencia</h3><p>Actualizar perfiles; definir la estructura del blog, su calendario y formulario de contacto; producir el primer artículo y sus tres publicaciones.</p><span class="week-metric">Medir: visitas iniciales al blog y respuestas recibidas.</span></article>
+                    <article class="card week"><span class="week-number">Semana 02 · Escuchar</span><h3>Invitar a participar</h3><p>Recibir propuestas por el blog, revisar comentarios y preguntas; publicar tres piezas y un video que respondan a una inquietud prioritaria.</p><span class="week-metric">Medir: aportaciones recibidas y conversaciones iniciadas.</span></article>
+                    <article class="card week"><span class="week-number">Semana 03 · Explicar</span><h3>Crear contenido de valor</h3><p>Publicar un artículo con contexto y fuentes; distribuir tres piezas, incluido un video con una explicación verificable.</p><span class="week-metric">Medir: lecturas del artículo, reproducción completa y compartidos.</span></article>
+                    <article class="card week"><span class="week-number">Semana 04 · Dar seguimiento</span><h3>Mostrar continuidad</h3><p>Actualizar el blog con avances y pendientes; completar las tres publicaciones y el video semanal; revisar resultados y ajustar temas.</p><span class="week-metric">Medir: respuestas atendidas, clics al blog y evolución del alcance.</span></article>
                 </div>
                 <article class="card" style="margin-top:16px">
                     <h3>Cómo crecer con confianza</h3>
                     <div class="grid-3" style="margin-top:13px">
-                        <div><p><strong>Publicar con constancia.</strong> Cumplir el calendario y reutilizar el video adaptándolo a cada red.</p></div>
-                        <div><p><strong>Conversar de verdad.</strong> Responder comentarios con respeto y convertir preguntas frecuentes en contenido.</p></div>
+                        <div><p><strong>Publicar con constancia.</strong> Sostener tres piezas semanales en el calendario, con un solo video y adaptación por plataforma.</p></div>
+                        <div><p><strong>Conversar de verdad.</strong> Atender aportaciones del blog y comentarios con respeto; convertir preguntas frecuentes en artículos o videos.</p></div>
                         <div><p><strong>Aprender y ajustar.</strong> Repetir formatos que generan conversación genuina; evitar comprar seguidores o inflar interacciones.</p></div>
                     </div>
                 </article>
@@ -451,7 +481,9 @@
                         <tbody>
                             <tr><td>Alcance y reproducciones</td><td>Cuántas personas recibieron el contenido y cuántas veces se vio.</td><td>Semanal</td><td>Por formato y plataforma; revisar tendencia frente a la semana anterior.</td></tr>
                             <tr><td>Retención de video</td><td>En qué momento dejan de mirar y qué tan completo se ve el video.</td><td>Semanal</td><td>Comparar aperturas, duración y temas similares.</td></tr>
-                            <tr><td>Interacciones relevantes</td><td>Comentarios, compartidos, guardados y preguntas recibidas.</td><td>Semanal</td><td>Separar conversación significativa de reacciones totales.</td></tr>
+                            <tr><td>Interacciones y contacto</td><td>Comentarios, compartidos, preguntas y formularios recibidos desde el blog.</td><td>Semanal</td><td>Separar conversación significativa de reacciones totales y dar seguimiento a cada consulta.</td></tr>
+                            <tr><td>Visitas y clics al blog</td><td>Artículos leídos y visitas generadas desde Facebook, TikTok e Instagram.</td><td>Semanal</td><td>Usar enlaces identificables por red y tema; revisar qué contenidos llevan a más lecturas.</td></tr>
+                            <tr><td>Ritmo editorial</td><td>Cumplimiento de tres publicaciones sociales y un video semanal.</td><td>Semanal</td><td>Registrar piezas planeadas, publicadas y adaptadas por plataforma en el calendario del blog.</td></tr>
                             <tr><td>Crecimiento de comunidad</td><td>Nuevos seguidores netos y evolución del perfil.</td><td>Mensual</td><td>Registrar una línea base; fijar objetivos realistas con datos propios.</td></tr>
                             <tr><td>Tiempo de respuesta</td><td>Qué tan pronto se atienden preguntas y mensajes.</td><td>Semanal</td><td>Revisar dudas pendientes y cumplimiento del seguimiento anunciado.</td></tr>
                         </tbody>
