@@ -83,13 +83,13 @@
             min-height: 330px;
             padding: clamp(32px, 5vw, 64px);
             border-radius: 22px;
-            background: var(--ink);
+            background-color: var(--ink);
             color: white;
             box-shadow: var(--shadow);
         }
         .hero::before, .hero::after { position: absolute; content: ""; pointer-events: none; }
-        .hero::before { top: -180px; right: -80px; width: 470px; height: 470px; border: 1px solid rgba(255,255,255,.09); border-radius: 50%; }
-        .hero::after { top: -105px; right: -5px; width: 320px; height: 320px; border: 1px solid rgba(255,255,255,.08); border-radius: 50%; }
+        .hero::before { inset: -6px; background: url("./actopan-centro.png") center 52% / cover no-repeat; filter: blur(2px); transform: scale(1.015); }
+        .hero::after { inset: 0; background: linear-gradient(90deg, rgba(23, 25, 22, .97) 0%, rgba(23, 25, 22, .86) 32%, rgba(23, 25, 22, .55) 66%, rgba(23, 25, 22, .3) 100%), linear-gradient(0deg, rgba(23, 25, 22, .76) 0%, transparent 62%); }
         .hero-copy { position: relative; z-index: 1; max-width: 650px; }
         .eyebrow { display: inline-flex; align-items: center; gap: 9px; margin-bottom: 15px; color: #c8d5ad; font-size: 10px; font-weight: 700; letter-spacing: 1.6px; text-transform: uppercase; }
         .eyebrow::before { width: 19px; height: 2px; background: var(--gold); content: ""; }
